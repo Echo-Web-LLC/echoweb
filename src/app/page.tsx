@@ -9,7 +9,26 @@ import Workscta from './workscta';
 
 export const metadata = {
   title: 'Landing Page',
-  description: 'Contains summary of general information on Echo Web, LLC',
+  description: 'Echo Web, LLC Brochure Site',
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      url: '/public/echo.jpg',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '16x16',
+      url: '/public/echo.jpg',
+    },
+    {
+      rel: 'apple-touch-icon',
+      sizes: '180x180',
+      url: '/public/echo.jpg',
+    },
+  ],
 }
 
 export default function Home() {

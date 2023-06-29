@@ -9,7 +9,7 @@ export default function Banner() {
                         <h1 className="text-3xl font-extrabold sm:text-5xl">
                             Custom Websites. <br />
                             <strong className="font-extrabold text-blue-600 sm:block">
-                                Your Mission's Catalyst.
+                                Your Mission&apos;s Catalyst.
                             </strong>
                         </h1>
 

@@ -12,7 +12,7 @@ const Workscta = () => {
                             <h2 className="text-3xl font-bold sm:text-4xl">Check Out Our Work!</h2>
 
                             <p className="mt-4 text-gray-600">
-                                We highlight why we chose to work with these companies whether it stemmed from a similarity or we put aside our differences to find a solution. We also cover what we don't do. Regardless let's connect, Echo Web, LLC is excited and available to chat!
+                                We highlight why we chose to work with these companies whether it stemmed from a similarity or we put aside our differences to find a solution. We also cover what we don&apos;t do. Regardless let&apos;s connect, Echo Web, LLC is excited and available to chat!
                             </p>
 
                             <a
@@ -221,12 +221,6 @@ const Workscta = () => {
             </section>
         </div>
     )
-}
-
-export const getStaticProps = async (context) => {
-    return {
-        props: {}
-    }
 }
 
 export default Workscta
