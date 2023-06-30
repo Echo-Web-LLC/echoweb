@@ -66,10 +66,4 @@ const Stats = () => {
     )
 }
 
-export const getStaticProps = async (context) => {
-    return {
-        props: {}
-    }
-}
-
 export default Stats
