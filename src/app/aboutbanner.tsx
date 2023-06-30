@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import logodarkbg from './images/favicon.jpg';
+
 const Aboutbanner = () => {
     return (
         <div>
@@ -9,9 +12,9 @@ const Aboutbanner = () => {
                         <div
                             className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
                         >
-                            <img
+                            <Image
                                 alt="Party"
-                                src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                src={logodarkbg}
                                 className="absolute inset-0 h-full w-full object-cover"
                             />
                         </div>
@@ -19,14 +22,17 @@ const Aboutbanner = () => {
                         <div className="lg:py-24">
                             <h2 className="text-3xl text-gray-800 font-bold sm:text-4xl">Our Mission</h2>
                             <h3 className="text-2xl text-gray-700 font-semibold sm:text-3xl">
-                                Why $100 Per Page
+                                Our Why&apos;s
                             </h3>
-                            <p className="mt-4 text-gray-600">
-                                Quality is a standard for Echo Web, LLC. We always keep our clients best interest in mind and put our best foot forward. The reason for having a such a flexible and low price model lies in our vision and mission. <strong> We are not just a full-stack web solution, at the core we are problem solvers. </strong>
+
+                            <article className="mt-4 text-gray-600">
+                                <h4 className='text-xl text-gray-600 font-medium'>Pricing</h4>
+                                Quality is a standard for Echo Web, LLC. We always keep our clients best interest in mind and put our best foot forward. The reason for having a such a flexible and low price model lies in our vision and mission. We are not just a full-stack web solution, <strong> at the core we strive to solve problems for the greater good. </strong>
                                 <br />
                                 <br />
-                                We know the design and development process can always improve for both clients and agencies. Diving into this process will help bootstrap our business and also equip our business with the right information, data, and knowledge to succeed in our mission.
-                            </p>
+                                <h4 className='text-xl text-gray-600 font-medium'>Mision</h4>
+                                We know the design and development process can always improve for both clients and agencies. Diving into this process will help bootstrap our business. Our Mission is to <strong> equip our business with the right information, data, and knowledge to empower and spread knowledge to society.</strong>
+                            </article>
 
                             <a
                                 href="#"
@@ -40,12 +46,6 @@ const Aboutbanner = () => {
             </section>
         </div>
     )
-}
-
-export const getStaticProps = async (context) => {
-    return {
-        props: {}
-    }
 }
 
 export default Aboutbanner

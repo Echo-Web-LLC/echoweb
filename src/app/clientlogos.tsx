@@ -1,24 +1,26 @@
+import Image from 'next/image';
+
 export default function ClientLogo() {
     return (
         <>
             <section className="flex">
-                <img
+                <Image
                     src={''}
                     alt="amoria-tea"
                 />
-                <img
+                <Image
                     src={''}
                     alt="tigers-tkd-omega"
                 />
-                <img
+                <Image
                     src={''}
                     alt="tastee-subs"
                 />
-                <img
+                <Image
                     src={''}
                     alt="kims-tkd"
                 />
-                <img
+                <Image
                     src={''}
                     alt="sj-auto-parts"
                 />
