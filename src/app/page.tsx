@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Nav from './nav';
 import Banner from './banner';
 import ClientLogo from './clientlogos';
@@ -32,8 +33,30 @@ export const metadata = {
 }
 
 export default function Home() {
+
   return (
     <>
+      <Head>
+        <title>Chris Cooper</title>
+        <meta name="description" content="Landing Page" />
+        <link rel="icon" href="./favicon.ico" />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
+      </Head>
       <Nav></Nav>
       <Banner></Banner>
       {/* <ClientLogo></ClientLogo> */}
