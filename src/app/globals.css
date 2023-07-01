@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .vh {
-    height: 50vh
+    height: 75vh
 }
 
 .minHeight {
@@ -11,10 +11,6 @@
 }
 
 @media screen and (min-width: 640px) {
-    .vh {
-        height: 75vh
-    }
-
 
     .minHeight {
         min-height: auto;
