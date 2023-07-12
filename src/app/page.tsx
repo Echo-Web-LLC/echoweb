@@ -11,25 +11,9 @@ import Workscta from './workscta';
 export const metadata = {
   title: 'Landing Page',
   description: 'Echo Web, LLC Brochure Site',
-  icons: [
-    {
-      rel: 'icon',
-      type: 'image/png',
-      sizes: '32x32',
-      url: '/public/echo.jpg',
-    },
-    {
-      rel: 'icon',
-      type: 'image/png',
-      sizes: '16x16',
-      url: '/public/echo.jpg',
-    },
-    {
-      rel: 'apple-touch-icon',
-      sizes: '180x180',
-      url: '/public/echo.jpg',
-    },
-  ],
+  icons: {
+    icon: './favicon.png',
+  },
 }
 
 export default function Home() {
@@ -37,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Chris Cooper</title>
+        <title>Andrew Kal</title>
         <meta name="description" content="Landing Page" />
         <link rel="icon" href="./favicon.ico" />
         <script
@@ -63,7 +47,7 @@ export default function Home() {
       <Stats></Stats>
       <Aboutbanner></Aboutbanner>
       <Testimonials></Testimonials>
-      <Workscta></Workscta>
+      {/* <Workscta></Workscta> */}
       <Footer></Footer>
       {/* ChatBot */}
     </>

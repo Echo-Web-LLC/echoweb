@@ -20,36 +20,40 @@ export default function Nav() {
 
                     <div className="flex flex-1 items-center justify-end md:justify-between">
                         <nav aria-label="Global" className="hidden md:block">
-                            <ul className="flex items-center gap-6 text-sm">
+                            <ul className="flex items-center text-xs gap-5 xl:gap-7 xl:text-sm">
                                 <li>
                                     <a className="text-gray-500 transition hover:text-gray-500/75" href="/about">
                                         About
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="/process">
-                                        Our Process
+                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="/pricing">
+                                        Pricing
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="/team">
-                                        Team
+                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="/process">
+                                        Solutions
                                     </a>
                                 </li>
-
                                 <li>
                                     <a className="text-gray-500 transition hover:text-gray-500/75" href="/services">
-                                        Services
+                                        Features
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="/works">
-                                        Works
+                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="/docs">
+                                        Docs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="/docs">
+                                        Guides
                                     </a>
                                 </li>
                                 <li>
                                     <a className="text-gray-500 transition hover:text-gray-500/75 flex align-bottom" target="_blank" href="/blogs">
-                                        Blogs
+                                        Articles
                                         <svg width="12px" height="12px" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className='opacity-50 mt-1 ml-1'>
                                             <g>
                                                 <path d="m1e3 600v400h-799.99v-799.99h400v-80.004h-400c-43.992 0-80.004 36-80.004 80.004v800c0 43.98 36.012 79.992 80.004 79.992h799.99c43.992 0 80.004-36.012 80.004-80.004v-400z" />
@@ -65,7 +69,8 @@ export default function Nav() {
                             <div className="sm:flex sm:gap-4">
                                 <a
                                     className="block rounded-md bg-blue-500 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700"
-                                    href="/"
+                                    href="https://ixqu3aocu0m.typeform.com/to/WpcyelXK"
+                                    target='_blank'
                                 >
                                     Contact
                                 </a>
